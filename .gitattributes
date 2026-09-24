@@ -1,0 +1,3 @@
+# Keep upstream implementation separate in GitHub language and diff views.
+src/chromium/** linguist-vendored
+public/assets/** linguist-vendored

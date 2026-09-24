@@ -37,7 +37,7 @@ The source-verification command checks all 19 original TypeScript files, nine sp
 
 ## What the evidence does—and does not—show
 
-The first encoded frame shows **43 points**: recording startup missed the opening few seconds. The footage continues through **13,724 points** and the final pause. It is not a complete capture from score zero. The current host arms the recorder before starting the game.
+The first encoded frame shows **43 points**: recording startup missed the opening few seconds. The footage continues through **13,724 points** and the final pause. It is not a complete capture from score zero. The current host arms the recorder and starts a silent audio source before the game. A [separate one-minute validation](VALIDATION.md) verified its capture from score zero through 859 points.
 
 The game ran at normal speed under original rules. JEV received structured obstacle geometry, not screenshots. A local controller calculated execution timing using original physics. The video was not sped up and the score was not added in editing.
 

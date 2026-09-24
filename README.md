@@ -91,6 +91,8 @@ npm run format         # Format authored code, leaving upstream bytes intact
 npm run check          # All of the above checks, including format validation
 ```
 
+The refactored host also passed a [one-minute Chrome validation](docs/VALIDATION.md): **859 points, 600 requests at 10 Hz**, with a recording verified from score zero and 21 offline tests passing.
+
 GitHub Actions runs the checks on Node 22 and 24. Browser recording is Chrome-specific and is not exercised in headless CI. The 13,724-point video predates the maintainability refactor; its original controller bundle is included in the release evidence. It is evidence for that recorded run, not a benchmark of every later revision.
 
 ```text

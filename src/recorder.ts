@@ -13,6 +13,7 @@ export class GameRecorder {
   private chunks: Blob[] = [];
   private mix: AudioContext | null = null;
   private audio: MediaStreamAudioDestinationNode | null = null;
+  private silence: ConstantSourceNode | null = null;
   private bridged = new Set<AudioContext>();
   private stream: MediaStream | null = null;
   private recordingError: Error | null = null;
@@ -43,6 +44,12 @@ export class GameRecorder {
     try {
       this.mix = new AudioContext();
       this.audio = this.mix.createMediaStreamDestination();
+      // An active silent source starts audio timestamps before the first game
+      // sound; otherwise Chromium can discard the opening video frames.
+      this.silence = this.mix.createConstantSource();
+      this.silence.offset.value = 0;
+      this.silence.connect(this.audio);
+      this.silence.start();
       await this.mix.resume();
       current = this;
       if (gameAudio) this.bridge(gameAudio);
@@ -93,6 +100,9 @@ export class GameRecorder {
   private async dispose(): Promise<void> {
     if (current === this) current = null;
     this.stream?.getTracks().forEach((track) => track.stop());
+    this.silence?.stop();
+    this.silence?.disconnect();
+    this.silence = null;
     await this.mix?.close();
     this.mix = null;
     this.audio = null;

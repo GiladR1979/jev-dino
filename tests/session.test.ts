@@ -119,3 +119,24 @@ test('jump forecasting leaves the live player and obstacle unchanged', () => {
   assert.deepEqual(player, beforePlayer);
   assert.deepEqual(obstacle, beforeObstacle);
 });
+
+// Native Window.fetch requires its receiver even when stored for injection.
+test('default transport preserves the browser fetch receiver', async () => {
+  const originalFetch = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async function (this: typeof globalThis, _url, options) {
+    assert.equal(this, globalThis);
+    calls++;
+    return receipt(String(options!.body));
+  };
+  try {
+    const session = new DecisionSession();
+    const result = await session.request(state);
+    assert.equal(result?.action, 'jump');
+    assert.equal(calls, 1);
+    assert.equal(session.received, 1);
+    assert.equal(session.pending, 0);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});

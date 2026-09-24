@@ -1,0 +1,65 @@
+{
+  "run_id": "run-1790262846387",
+  "date": "2026-09-24",
+  "purpose": "One-minute Chrome smoke test of the refactored host after browser fetch and recording-startup fixes",
+  "base_commit": "148fdb3c795664584fbfb9cc0e0c31130fd264ea",
+  "tested_source_sha256": {
+    "src/decision-session.ts": "8241399fd1c11a09f61e55c15cf6ebba9d4527a6d23a56161a28f45ba03ebfda",
+    "src/recorder.ts": "6d191a2711172fd735f626a24205b90776bcbb75856e3f1105991c930c927243",
+    "public/app.js": "e8e3631c12747a449aef8e5509dc4ee9d17114c77095668452717f6b7817a314",
+    "source-manifest.json": "3932364033886ac0009d4da0ed8a3d0312aa8bfa2ba65855c147beebbee10c88"
+  },
+  "browser": "Desktop Google Chrome on macOS",
+  "upstream_version": "153.0.8010.53",
+  "model": "jev-1.13.0",
+  "result": {
+    "score": 859,
+    "reason": "stopped",
+    "fault": "",
+    "last_dispatch_ms": 60005,
+    "mean_dispatch_hz": 10.000166947695288,
+    "sent": 600,
+    "received": 596,
+    "server_receipts": 597,
+    "jumps": 42,
+    "ducks": 4,
+    "median_latency_ms": 285.0,
+    "p95_latency_ms": 366
+  },
+  "response_accounting": "Stopping aborted four outstanding browser requests. One of those had already produced a server receipt. Late responses cannot affect the finished game; pending requests at stop are not API failures.",
+  "server_reported_usage": {
+    "input_tokens": 340753,
+    "output_tokens": 32835,
+    "receipt_count": 597,
+    "scope": "Final run only; excludes exploratory runs and UI-routing requests"
+  },
+  "recording": {
+    "filename": "jev-dino-60-second-validation.mp4",
+    "duration_seconds": 61.83,
+    "duration_note": "Includes capture startup and a held final frame after the timed stop",
+    "video": "H.264 High, 1920x1080, 60 fps, yuv420p",
+    "audio": "AAC, 48000 Hz, stereo",
+    "first_frame_score": 0,
+    "final_frame_score": 859,
+    "mean_audio_volume_db": -37.2,
+    "peak_audio_volume_db": -14.9,
+    "sha256": "7c04148c85c12b87a6c27a1230ca05746b4854b79e2740a8ad6c0d1fed48027c"
+  },
+  "run_report": {
+    "path": "run-1790262846387.json",
+    "sha256": "1780c11783cafb44d7f69fb66bc0f465be90464cf53118a57677158edba9fd82"
+  },
+  "checks": {
+    "offline_tests_passed": 21,
+    "strict_typecheck": "passed",
+    "production_build": "passed",
+    "format_validation": "passed",
+    "unchanged_upstream_files": 29,
+    "browser_console_errors": 0,
+    "independent_code_review": "passed"
+  },
+  "limits": [
+    "Single manual smoke test, not an endurance guarantee or performance benchmark.",
+    "13,724-point release video belongs to the earlier prototype, not this one-minute run."
+  ]
+}

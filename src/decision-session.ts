@@ -38,7 +38,7 @@ export class DecisionSession {
   pending = 0;
   lastLatency = 0;
   private closed = false;
-  constructor(private transport: typeof fetch = fetch) {}
+  constructor(private transport: typeof fetch = fetch.bind(globalThis)) {}
   get hz(): number {
     const recent = this.dispatchTimes.filter(
       (t) => performance.now() - t < 10_000,

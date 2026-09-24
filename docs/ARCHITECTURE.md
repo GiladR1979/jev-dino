@@ -55,6 +55,8 @@ stateDiagram-v2
 
 Stopping first disables decisions and aborts pending browser requests. The adapter then permanently closes its input and visibility gates and calls Chromium's own stop method to cancel the game loop, including when stopped during the intro. Held keys are released after the gate closes so that a paused game's keyup handler cannot resume it. The gates are installed before Chromium binds its visibility callbacks and pass through unchanged while the run is active. Once terminated, late focus, visibility, keyboard, pointer, and touch events cannot reset or resume the game. The hidden game subtree becomes inert; page controls and download links remain usable. The final frame is held before recording stops, and a new game requires a reload. Download links are created before local upload so a disk or HTTP failure does not discard a successfully captured video. Evidence upload failure also leaves a browser download available.
 
+Capture starts a zero-valued audio source before the encoder. This keeps audio timestamps active before the first game sound, preventing Chromium from discarding the opening video frames. Shutdown stops that source, capture tracks, and the recording audio context; regression tests cover completion and encoder startup failure.
+
 The current server does **not retry** JEV requests automatically: an error ends the run visibly. The historical recorded prototype retried once. This deliberate change avoids hidden duplicate billable calls. Disconnects cancel upstream work where possible; a provider may still charge for work already accepted.
 
 ## Tradeoffs and limits

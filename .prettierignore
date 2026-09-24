@@ -1,0 +1,8 @@
+src/chromium/
+public/
+source-manifest.json
+LICENSE.chromium
+docs/results/
+evidence/
+recordings/
+node_modules/

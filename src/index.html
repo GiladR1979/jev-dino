@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>JEV plays Chromium Dino</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #e9ece8;
+      color: #223229;
+      font:
+        15px system-ui,
+        sans-serif;
+    }
+    main {
+      max-width: 1440px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      flex: 1;
+    }
+    button {
+      font: 600 14px system-ui;
+      padding: 11px 20px;
+      border: 0;
+      border-radius: 8px;
+      background: #183f2e;
+      color: white;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: 0.5;
+    }
+    #stop {
+      background: #6b3a30;
+    }
+    #stage {
+      width: 100%;
+      display: block;
+      background: #fafbf8;
+      border-radius: 8px;
+      box-shadow: 0 3px 25px #172e1920;
+    }
+    #game {
+      width: 600px;
+      height: 150px;
+      position: absolute;
+      top: 260px;
+      left: calc(50% - 300px);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .runner-container {
+      position: relative;
+      height: 150px;
+    }
+    .runner-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .icon-offline,
+    .hidden,
+    .offline-runner-live-region {
+      display: none;
+    }
+    #resources {
+      display: none;
+    }
+    #status {
+      margin: 15px 0;
+      color: #435348;
+      white-space: pre-wrap;
+    }
+    .note {
+      font-size: 12px;
+      color: #69766b;
+    }
+    a {
+      color: #275e43;
+    }
+    #downloads {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 700px) {
+      header {
+        flex-wrap: wrap;
+      }
+      h1 {
+        flex-basis: 100%;
+      }
+      main {
+        padding: 12px;
+      }
+    }
+  </style>
+  <main>
+    <header>
+      <h1>JEV plays Chromium Dino</h1>
+      <button id="practice">Practice run</button
+      ><button id="record">Record high-score run</button
+      ><button id="stop" disabled>Stop and save</button>
+    </header>
+    <canvas
+      id="stage"
+      width="1920"
+      height="1080"
+      aria-label="Live dinosaur game and JEV telemetry"
+    ></canvas>
+    <div id="status" role="status">Loading original Chromium game…</div>
+    <p class="note">
+      Original Chromium 153.0.8010.53 game • Normal difficulty • JEV chooses
+      obstacle actions at 10 requests/s; local timing executes them. Live
+      1920×1080 capture.
+    </p>
+    <div id="downloads"></div>
+    <p id="new-run" hidden>
+      <a href="/">Start a fresh run</a> · Download your recording before
+      reloading.
+    </p>
+  </main>
+  <div id="game"><div class="icon-offline"></div></div>
+  <div id="resources">
+    <img
+      id="offline-resources-1x"
+      src="assets/images/default_100_percent/offline/100-offline-sprite.png"
+    /><img
+      id="offline-resources-2x"
+      src="assets/images/default_200_percent/offline/200-offline-sprite.png"
+    />
+  </div>
+  <template id="audio-resources">AUDIO_TEMPLATE</template>
+  <script type="module" src="app.js"></script>
+</html>

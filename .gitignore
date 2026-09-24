@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.log
+.DS_Store
+public/app.js
+public/app.js.map
+public/index.html
+evidence/
+recordings/
+coverage/

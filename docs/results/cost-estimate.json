@@ -1,0 +1,21 @@
+{
+  "recorded_run": {
+    "calls": 7196,
+    "obstacle_calls": 4378,
+    "no_obstacle_calls": 2818,
+    "estimated_input_tokens": 4324394,
+    "estimated_usd": 0.181624548
+  },
+  "practice": {
+    "calls": 749,
+    "obstacle_calls": 541,
+    "no_obstacle_calls": 208,
+    "estimated_input_tokens": 453605,
+    "estimated_usd": 0.01905141
+  },
+  "rate_usd_per_million_input_tokens": 0.042,
+  "output_tokens_free": true,
+  "method": "Weighted estimate from two representative API usage samples. Original calls did not retain token counts, so this is not an exact billed total. Small variation in numeric fields and setup calls is excluded.",
+  "pricing_source": "https://docs.typesafe.ai/models",
+  "gameplay_total_estimated_usd": 0.200675958
+}

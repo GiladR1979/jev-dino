@@ -1,0 +1,151 @@
+{
+  "chrome_version": "153.0.8010.53",
+  "tree": "c70798a68bbb7bf48bf9265e6b24371f3e74dedd",
+  "files": [
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/background_el.ts",
+      "file": "src/chromium/background_el.ts",
+      "sha256": "aa0a1f3fc55bd9c98cf395b09ed56633ac76c890854529abccafa4216471b6b2"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/cloud.ts",
+      "file": "src/chromium/cloud.ts",
+      "sha256": "80db07c33522c86a8d8cbe7bb132cb1633d182aa74e54fb443da952818edb443"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/constants.ts",
+      "file": "src/chromium/constants.ts",
+      "sha256": "2c6b09f9a6cad4f781ad81b1da9cc7036594d607c67d756bdfc2b66a076768a2"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/dimensions.ts",
+      "file": "src/chromium/dimensions.ts",
+      "sha256": "c6187ac40dea448515e594a3312fda872704f9f7055dccc38f5e6ca9c6615abe"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/distance_meter.ts",
+      "file": "src/chromium/distance_meter.ts",
+      "sha256": "f23707226c7300a439c29bb16de98510c3a981bd3fc144b14a79ef90c3751bc8"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/game_config.ts",
+      "file": "src/chromium/game_config.ts",
+      "sha256": "f9a1b31165f04f22240d56440b5e2e4a0c326e1bcaeeca5e5c5079e8fd7d3534"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/game_over_panel.ts",
+      "file": "src/chromium/game_over_panel.ts",
+      "sha256": "2aa61dd76588b2a0b0c8c393aa68247736c542006bc29869eb1c0f5f12a19747"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/game_state_provider.ts",
+      "file": "src/chromium/game_state_provider.ts",
+      "sha256": "54232d9ba0d64068453c2eec01c3e540ddfdf05fb17e6721dc8e23841acabacf"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/generated_sound_fx.ts",
+      "file": "src/chromium/generated_sound_fx.ts",
+      "sha256": "2462115ad165255a2eefb467315eee99b2b1bd087bd75e0c6e332bc8062555a2"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/horizon.ts",
+      "file": "src/chromium/horizon.ts",
+      "sha256": "a5dcd3e56145c6fd39bd2c2626ae433c7be768d941b5c44e1b8dd00edfa99d22"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/horizon_line.ts",
+      "file": "src/chromium/horizon_line.ts",
+      "sha256": "6c58d26133698c988b6bc1037c9e6830152fa3f817e91d1f51dbfb066c046366"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/image_sprite_provider.ts",
+      "file": "src/chromium/image_sprite_provider.ts",
+      "sha256": "b366a15eacd6d77781a7c83d6440b22306a60977fbadb58be6e48245f54d661e"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/night_mode.ts",
+      "file": "src/chromium/night_mode.ts",
+      "sha256": "e1a00e8b3be455b7e24b91a72349042619f1bb100324db137bf39955e4e65626"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/obstacle.ts",
+      "file": "src/chromium/obstacle.ts",
+      "sha256": "18215a0292cbb56a293775440687ffb83a3bbb7ce4da69b41a0d20c05ac9e350"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/offline.ts",
+      "file": "src/chromium/offline.ts",
+      "sha256": "3d6e251e07c7ff8a5d981c2cc736a2a2fa3dd3c4bf1b7e58546f83255e4af2ad"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/offline_sprite_definitions.ts",
+      "file": "src/chromium/offline_sprite_definitions.ts",
+      "sha256": "d17f339d17bfbdffb1130529bbbe48ab1024ec6344a5d21f41a93351502a3f48"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/sprite_position.ts",
+      "file": "src/chromium/sprite_position.ts",
+      "sha256": "780e68b8bee6dd0b23d404975c5ea63f2a887fb861a9a9fa6d65c292cbce68ab"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/trex.ts",
+      "file": "src/chromium/trex.ts",
+      "sha256": "bc40b980ebc151ac0c6c88a0aae45a9e459af4e212c6cb15d91a1e87cd86417d"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/dino_game/utils.ts",
+      "file": "src/chromium/utils.ts",
+      "sha256": "281b92309b765537564c135e29519d04cfef750c2b40c4517ec294bb808b9bd3"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/images/default_100_percent/offline/100-disabled.png",
+      "file": "public/assets/images/default_100_percent/offline/100-disabled.png",
+      "sha256": "eaad2cef483bc556e8db0486dfc40d16508d2b41868a358094ff3fb5f41db1b2"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/images/default_100_percent/offline/100-error-offline.png",
+      "file": "public/assets/images/default_100_percent/offline/100-error-offline.png",
+      "sha256": "0d26708e4a360173db7a6a5e82ec2b5b95631feb886a76b343dbae951ece8565"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/images/default_100_percent/offline/100-offline-sprite.png",
+      "file": "public/assets/images/default_100_percent/offline/100-offline-sprite.png",
+      "sha256": "04d05978fdb111358073ab0524e5c1fafc0826615c206987618416b8bd8a4747"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/images/default_200_percent/offline/200-disabled.png",
+      "file": "public/assets/images/default_200_percent/offline/200-disabled.png",
+      "sha256": "62cc4098387ae2b2edb6b0bbfe74a172913cad43e084f3e5559c9d53ded07a8a"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/images/default_200_percent/offline/200-error-offline.png",
+      "file": "public/assets/images/default_200_percent/offline/200-error-offline.png",
+      "sha256": "67fe721069e807817d59677589ce034d3ab8fd1f7276872752c0b0990c9140c3"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/images/default_200_percent/offline/200-offline-sprite.png",
+      "file": "public/assets/images/default_200_percent/offline/200-offline-sprite.png",
+      "sha256": "e4222715b556e7d99622c83e620d2f8e090047e56adb07923047f95828d561f2"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/sounds/button-press.mp3",
+      "file": "public/assets/sounds/button-press.mp3",
+      "sha256": "c29ea1bb6353a9bd16753d3f46957f0c80fb08769cc945d83b20d3c48470236e"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/sounds/hit.mp3",
+      "file": "public/assets/sounds/hit.mp3",
+      "sha256": "4a618da307a0e5807de7782693113328bf0bd2bcdedc1029a7ed5c545354f4a1"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/components/neterror/resources/sounds/score-reached.mp3",
+      "file": "public/assets/sounds/score-reached.mp3",
+      "sha256": "cfd198edb6d6adb02456074d7617eec1c745cd00b5b912840cda2b8fbd1aa4fc"
+    },
+    {
+      "source": "https://chromium.googlesource.com/chromium/src/+/refs/tags/153.0.8010.53/LICENSE",
+      "file": "LICENSE.chromium",
+      "sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b"
+    }
+  ]
+}

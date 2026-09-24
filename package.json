@@ -1,0 +1,29 @@
+{
+  "name": "jev-dino",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JEV action selection at 10 Hz, original Chromium Dino physics, and reproducible gameplay evidence.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "test": "node --import tsx --test tests/*.test.*",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify-source": "node verify-source.mjs",
+    "check": "npm run verify-source && npm run typecheck && npm test && npm run build && npm run format:check",
+    "export-video": "node scripts/export-video.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "esbuild": "^0.28.2",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

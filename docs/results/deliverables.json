@@ -1,0 +1,34 @@
+{
+  "final_score": 13724,
+  "first_recorded_score": 43,
+  "duration_seconds": 716.38,
+  "video": "H.264, 1920x1080, 60 fps",
+  "audio": "AAC, 48000 Hz stereo",
+  "stop_reason": "User requested stop; no collision",
+  "mean_JEV_calls_per_second": 10,
+  "verified": [
+    "first frame inspected",
+    "midpoint inspected",
+    "final frame inspected",
+    "game audio is present",
+    "all 7196 JEV responses logged",
+    "29 upstream source and asset hashes verified"
+  ],
+  "files": [
+    {
+      "path": "recordings/jev-dino-13724-1080p60.mp4",
+      "bytes": 69841226,
+      "sha256": "5d3f8f21907510c32a77cd3170090ee83623de8aabf92f20b2b2ed830baed21e"
+    },
+    {
+      "path": "recordings/jev-dino-13724-poster.png",
+      "bytes": 155169,
+      "sha256": "4d6d20b687a8a39107c6a7cf9555e08b4dff9d8c38999bfc8f0906385a34cabe"
+    },
+    {
+      "path": "recordings/run-1790258867455-score-13724.webm",
+      "bytes": 300638083,
+      "sha256": "0c9ecf7648dd4982a602af7ca4e935c0a7656dabbe999df1748078c29a716bda"
+    }
+  ]
+}

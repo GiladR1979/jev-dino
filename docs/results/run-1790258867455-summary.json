@@ -1,0 +1,20 @@
+{
+  "score": 13724,
+  "ending": "stopped",
+  "recording": "run-1790258867455-score-13724.webm",
+  "chromiumVersion": "153.0.8010.53",
+  "JEVModels": [
+    "jev-1.13.0"
+  ],
+  "requests": 7196,
+  "validatedResponses": 7196,
+  "meanDispatchHz": 10,
+  "medianLatencyMs": 276,
+  "p95LatencyMs": 353,
+  "maxLatencyMs": 1970,
+  "executedJumps": 636,
+  "executedDucks": 83,
+  "elapsedSeconds": 722.4,
+  "sourceRulesModified": false,
+  "method": "Structured visible obstacle geometry to JEV; original physics simulation schedules the selected key action"
+}

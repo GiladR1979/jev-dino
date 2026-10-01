@@ -20,7 +20,7 @@
     "export-video": "node scripts/export-video.mjs"
   },
   "devDependencies": {
-    "@types/node": "^26.6.2",
+    "@types/node": "^26.6.3",
     "esbuild": "^0.28.2",
     "prettier": "^3.9.9",
     "tsx": "^4.23.15",
